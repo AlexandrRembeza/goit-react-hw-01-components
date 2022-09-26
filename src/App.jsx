@@ -10,13 +10,7 @@ import statsData from './data.json';
 import friendsData from './friends.json';
 import transactionsData from './transactions.json';
 
-const {
-  username,
-  tag,
-  location,
-  avatar,
-  stats: { followers, views, likes },
-} = userData;
+const { username, tag, location, avatar, stats } = userData;
 
 export const App = () => {
   return (
@@ -26,9 +20,7 @@ export const App = () => {
         tag={tag}
         location={location}
         avatar={avatar}
-        followers={followers}
-        views={views}
-        likes={likes}
+        stats={stats}
       />
       <Statistic title="Upload stats" stats={statsData} />
       <Statistic stats={statsData} />

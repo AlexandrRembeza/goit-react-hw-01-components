@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { getRandomHexColor } from 'utils/getRandomHexColor';
 
 export const StatItem = styled.li`
   flex-basis: calc(100% / 4);
@@ -20,9 +21,3 @@ export const Label = styled.span`
 export const Percentage = styled.span`
   font-size: 17px;
 `;
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}

@@ -7,7 +7,7 @@ export const Statistic = ({ title, stats }) => {
   return (
     <Section>
       <StatisticWrapper>
-        {title ? <Title title={title} /> : <Title title="NO TITLE" />}
+        {title && <Title title={title} />}
 
         <StatisticList>
           {stats.map(({ id, label, percentage }) => {

@@ -2,15 +2,7 @@ import { Card, ProfileWrapper } from './Profile.styled';
 import { ProfileInfo } from './ProfileInfo/ProfileInfo';
 import { Stats } from './ProfileStats/Stats';
 
-export const Profile = ({
-  username,
-  tag,
-  location,
-  avatar,
-  followers,
-  views,
-  likes,
-}) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfileWrapper>
       <Card>
@@ -20,7 +12,7 @@ export const Profile = ({
           location={location}
           avatar={avatar}
         />
-        <Stats followers={followers} views={views} likes={likes} />
+        <Stats stats={stats} />
       </Card>
     </ProfileWrapper>
   );

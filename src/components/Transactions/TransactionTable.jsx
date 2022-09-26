@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Table,
   TableWrapper,
@@ -6,7 +7,6 @@ import {
   TBody,
 } from './TransactionTable.styled';
 import { TransactionElem } from './TransactionBody/TransactionElem';
-import PropTypes from 'prop-types';
 
 export const TransactionTable = ({ items }) => {
   return (
